@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Paulo Renan">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="combustivel, combustível, app, web, webapp, etanol, gasolina, melhor, senai, comparativo, noturno, front, ende, front-end, desenvoldor, desenvolvimento">
+    <link rel="stylesheet" href="css/estilo.css" type="text/css" media="all" >
+
+    <title>App Combustivel</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>App Combustivel</h1>
+            <hr>
+            <h2 id="result"></h2>
+        </div>
+    </header>
+    <main>
+        <div class="imagem">
+            <img src="image/posto.jpg" class="image">
+
+        </div>
+        <div class="preco">
+            <div class="formulario">
+                <form onsubmit="return false;">
+                <label class="texto"> Valor da gasolina:</label> <br>
+                <label class="texto"> R$</label>
+                <input class="texto1" type="text" placeholder="0,00" id="gasolina" onkeyup="verificarInput(event);"> <br><br>
+                
+                <label class="texto"> Valor da etanol:</label> <br>
+                <label class="texto"> R$</label>
+                <input class="texto1" type="text" placeholder="0,00" id="etanol" onkeyup="verificarInput(event);"> <br><br>
+                <button onclick="combustivel();" class="botao"> Calcular</button>
+                </form> 
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>    
+</body>
+</html>
